@@ -48,3 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
   var cartasEscogidasId = [];
   var cartasGanadas = [];
 });
+
+function crearTablero (){
+  for (let i = 0; i < cardAdj.lenght; i++){
+
+    carta.setAttribute("src","images/reverso.png");
+
+    carta.setAttribute("data-id", i);
+
+    carta.addEventListener("click", voltearCarta);
+
+    cuadricula.appendChild(carta);
+
+  }
+}
